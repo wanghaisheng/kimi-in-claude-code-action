@@ -31,7 +31,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run Claude Code for Issue Triage
-        uses: anthropics/claude-code-action@beta
+        uses: anthropics/claude-code-base-action@beta
         with:
           prompt_file: ./prompts/game-app.md
           timeout_minutes: "5"
