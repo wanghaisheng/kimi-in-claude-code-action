@@ -51,17 +51,6 @@ jobs:
             }
           }
           EOF
-      - name: Setup kimi env
-        run: |    
-          mkdir -p .claude      
-          cat > .claude/settings.json << 'EOF'
-          {
-              "env": {
-                  "ANTHROPIC_AUTH_TOKEN": ${{ secrets.ANTHROPIC_API_KEY }},
-                  "ANTHROPIC_BASE_URL": "https://api.moonshot.cn/anthropic/"
-              }
-          }
-          EOF
 
       - name: Run Claude Code for Issue Triage
         uses: anthropics/claude-code-base-action@beta
@@ -70,5 +59,8 @@ jobs:
           allowed_tools: "Bash(gh label list),mcp__github__get_issue,mcp__github__get_issue_comments,mcp__github__update_issue,mcp__github__search_issues,mcp__github__list_issues"
           mcp_config: /tmp/mcp-config/mcp-servers.json
           timeout_minutes: "5"
-          ANTHROPIC_BASE_URL: "https://api.moonshot.cn/anthropic/"
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+        env:
+
+          # Provider configuration
+          ANTHROPIC_BASE_URL: "https://api.moonshot.cn/anthropic/"       
