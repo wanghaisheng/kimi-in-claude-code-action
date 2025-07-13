@@ -21,7 +21,9 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: read
-      issues: write
+      pull-requests: read
+      issues: read
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
