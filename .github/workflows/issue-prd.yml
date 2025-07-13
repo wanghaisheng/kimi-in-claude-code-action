@@ -53,24 +53,12 @@ jobs:
           EOF
       - name: Setup kimi env
         run: |
-          cat > /tmp/mcp-config/mcp-servers.json << 'EOF'
+          cat > ~/.claude/settings.json << 'EOF'
           {
-            "mcpServers": {
-              "github": {
-                "command": "docker",
-                "args": [
-                  "run",
-                  "-i",
-                  "--rm",
-                  "-e",
-                  "GITHUB_PERSONAL_ACCESS_TOKEN",
-                  "ghcr.io/github/github-mcp-server:sha-721fd3e"
-                ],
-                "env": {
-                  "GITHUB_PERSONAL_ACCESS_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
-                }
+              "env": {
+                  "ANTHROPIC_AUTH_TOKEN": ${{ secrets.ANTHROPIC_API_KEY }},
+                  "ANTHROPIC_BASE_URL": "https://api.moonshot.cn/anthropic/"
               }
-            }
           }
           EOF
 
