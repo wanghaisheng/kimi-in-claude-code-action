@@ -140,8 +140,6 @@
 避免触犯了Google search consolee常常饭犯的错误 重定向等等收录问题，
 
 
-add modular seo,google adsense, google analytic,ld json ,clarity,robots sitemap generate after build
-创建url structrue 内链
 
 
 遵循如下规范:
