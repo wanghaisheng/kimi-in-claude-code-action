@@ -37,6 +37,12 @@ jobs:
           timeout_minutes: "60"
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
         env:
-
           # Provider configuration
           ANTHROPIC_BASE_URL: "https://api.moonshot.cn/anthropic/"       
+      - name: Commit and push data folder
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Update" 
+          git push || echo "No changes to push"
