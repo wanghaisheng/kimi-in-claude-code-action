@@ -6,12 +6,16 @@ on:
 
 jobs:
   triage-issue:
+    if: |
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@prd')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@prd')) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@prd')) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@prd') || contains(github.event.issue.title, '@prd')))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: read
       issues: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
