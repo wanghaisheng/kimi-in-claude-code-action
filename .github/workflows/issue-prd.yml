@@ -28,36 +28,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup GitHub MCP Server
-        run: |
-          mkdir -p /tmp/mcp-config
-          cat > /tmp/mcp-config/mcp-servers.json << 'EOF'
-          {
-            "mcpServers": {
-              "github": {
-                "command": "docker",
-                "args": [
-                  "run",
-                  "-i",
-                  "--rm",
-                  "-e",
-                  "GITHUB_PERSONAL_ACCESS_TOKEN",
-                  "ghcr.io/github/github-mcp-server:sha-721fd3e"
-                ],
-                "env": {
-                  "GITHUB_PERSONAL_ACCESS_TOKEN": "${{ secrets.GITHUB_TOKEN }}"
-                }
-              }
-            }
-          }
-          EOF
-
       - name: Run Claude Code for Issue Triage
-        uses: anthropics/claude-code-base-action@beta
+        uses: anthropics/claude-code-action@beta
         with:
           prompt_file: ./prompts/game-app.md
-          allowed_tools: "Bash(gh label list),mcp__github__get_issue,mcp__github__get_issue_comments,mcp__github__update_issue,mcp__github__search_issues,mcp__github__list_issues"
-          mcp_config: /tmp/mcp-config/mcp-servers.json
           timeout_minutes: "5"
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
         env:
