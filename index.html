@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交互式网页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>欢迎使用交互式网页</h1>
+            <p>点击按钮体验不同的功能</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>计数器</h2>
+                <div class="counter">
+                    <button id="decrease" class="btn">-</button>
+                    <span id="count">0</span>
+                    <button id="increase" class="btn">+</button>
+                </div>
+                <button id="reset" class="btn reset-btn">重置</button>
+            </section>
+
+            <section class="card">
+                <h2>待办事项</h2>
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="添加新任务...">
+                    <button id="addTodo" class="btn">添加</button>
+                </div>
+                <ul id="todoList" class="todo-list"></ul>
+            </section>
+
+            <section class="card">
+                <h2>主题切换</h2>
+                <button id="themeToggle" class="btn theme-btn">切换到暗色主题</button>
+            </section>
+
+            <section class="card">
+                <h2>颜色选择器</h2>
+                <div class="color-picker">
+                    <input type="color" id="colorPicker" value="#3498db">
+                    <div id="colorPreview" class="color-preview"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 交互式网页演示</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
