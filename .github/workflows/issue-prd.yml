@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  triage-issue:
+  prd-to-prototypes:
     if: |
       (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@prd')) ||
       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@prd')) ||
@@ -34,7 +34,7 @@ jobs:
         uses: anthropics/claude-code-base-action@beta
         with:
           prompt_file: ./prompts/game-app.md
-          timeout_minutes: "5"
+          timeout_minutes: "60"
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
         env:
 
