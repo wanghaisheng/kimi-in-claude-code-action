@@ -52,8 +52,8 @@ jobs:
           }
           EOF
       - name: Setup kimi env
-        run: |
-          cat > ~/.claude/settings.json << 'EOF'
+        run: |    
+          cat >.claude/settings.json << 'EOF'
           {
               "env": {
                   "ANTHROPIC_AUTH_TOKEN": ${{ secrets.ANTHROPIC_API_KEY }},
