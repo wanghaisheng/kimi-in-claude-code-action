@@ -34,6 +34,7 @@ jobs:
         uses: anthropics/claude-code-base-action@beta
         with:
           # prompt_file: ./prompts/game-app.md
+          prompt: "使用html+css+js创建"
           timeout_minutes: "60"
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
         env:
