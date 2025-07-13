@@ -8,13 +8,13 @@ https://github.com/wanghaisheng/kimi-in-claude-code-action
 
 然后点击settings  把workflow permissons的写文件打开，ai的工作我们都要保存到github这个新建的仓库里
 
+<img width="1912" height="962" alt="sf7Gw2Dh65" src="https://github.com/user-attachments/assets/73dfc070-2ef5-4490-be01-b40952741abd" />
 
 
 接着回去settings页面在actions下面，点那个secret
 
 
 
-<img width="1912" height="962" alt="sf7Gw2Dh65" src="https://github.com/user-attachments/assets/73dfc070-2ef5-4490-be01-b40952741abd" />
 
 <img width="1912" height="962" alt="6mVMcskOnW" src="https://github.com/user-attachments/assets/fa63eeb1-9651-4270-8d5c-5bddf3be64c7" />
 
