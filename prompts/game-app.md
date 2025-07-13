@@ -155,16 +155,6 @@ https://support.google.com/adsense/answer/10015918?sjid=1506961067248409844-NC
 
 https://support.google.com/adsense/thread/176631357/two-of-the-most-common-reasons-for-site-disapproval-adsense-pro-post?hl=en
 
-add  link
-https://x.com/edwin_uestc
-
-https://github.com/wanghaisheng
-https://www.linkedin.com/in/wanghaisheng/
-add  support :
-
-https://ko-fi.com/tiktoka33697
-https://patreon.com/wanghaisheng
-在marketing文件夹下创建子文件夹，每个帖子独立一个文件，为twitter 、reddit、product hunt、hacknews创建英文内容 build in public  100 product challenge  ,为微信公众号(大于2000字)、即刻、小红书平台创建中文内容，为indiehacker创建讲故事形式 的post
 
 
 **整体优化与验证 Checklist (AI 自主研究、决策、设计、技术实现 - 聚焦高转化、SEO、信任、游戏化、全面 i18n):**
