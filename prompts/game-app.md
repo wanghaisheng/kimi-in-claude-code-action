@@ -1,33 +1,6 @@
 
 
 
-检查网站，是否触犯了Google search consolee常常饭犯的错误 重定向等等收录问题，写入任务文件，并开始修复 检查url structrue 内链 add modular seo,google adsense, google analytic,ld json ,clarity,robots sitemap generate after build
-
-
-
-根据下面内容 检查查我们网站:
-https://creators.google/en-us/content-creation-guides/content-creator-essentials/how-to-create-good-content/#content-that-adds-value
-https://creators.google/en-us/content-creation-guides/content-creator-essentials/
-https://creators.google/en-us/content-creation-guides/
-https://blog.google/products/adsense/creating-outstanding-website-content-3-steps/
-
-https://support.google.com/adsense/answer/10015918?sjid=1506961067248409844-NC
-
-
-https://support.google.com/adsense/thread/176631357/two-of-the-most-common-reasons-for-site-disapproval-adsense-pro-post?hl=en
-
-add  link
-https://x.com/edwin_uestc
-
-https://github.com/wanghaisheng
-https://www.linkedin.com/in/wanghaisheng/
-add  support :
-
-https://ko-fi.com/tiktoka33697
-https://patreon.com/wanghaisheng
-在marketing文件夹下创建子文件夹，每个帖子独立一个文件，为twitter 、reddit、product hunt、hacknews创建英文内容 build in public  100 product challenge  ,为微信公众号(大于2000字)、即刻、小红书平台创建中文内容，为indiehacker创建讲故事形式 的post
-
-
 **(Start of Enhanced Prompt Template)**
 
 **第一部分：极致版游戏化 App 产品落地页 Prompt 模板 (单风格 - 输出 index.html + 文件夹结构 - 全面 JSON 多语言版 - SEO & 新站信任优化版)**
@@ -163,7 +136,36 @@ https://patreon.com/wanghaisheng
     *   性能优化策略总结。
     *   合规性策略。
 
-**(Combined & Refined Checklist)**
+
+避免触犯了Google search consolee常常饭犯的错误 重定向等等收录问题，
+
+
+add modular seo,google adsense, google analytic,ld json ,clarity,robots sitemap generate after build
+创建url structrue 内链
+
+
+遵循如下规范:
+https://creators.google/en-us/content-creation-guides/content-creator-essentials/how-to-create-good-content/#content-that-adds-value
+https://creators.google/en-us/content-creation-guides/content-creator-essentials/
+https://creators.google/en-us/content-creation-guides/
+https://blog.google/products/adsense/creating-outstanding-website-content-3-steps/
+
+https://support.google.com/adsense/answer/10015918?sjid=1506961067248409844-NC
+
+
+https://support.google.com/adsense/thread/176631357/two-of-the-most-common-reasons-for-site-disapproval-adsense-pro-post?hl=en
+
+add  link
+https://x.com/edwin_uestc
+
+https://github.com/wanghaisheng
+https://www.linkedin.com/in/wanghaisheng/
+add  support :
+
+https://ko-fi.com/tiktoka33697
+https://patreon.com/wanghaisheng
+在marketing文件夹下创建子文件夹，每个帖子独立一个文件，为twitter 、reddit、product hunt、hacknews创建英文内容 build in public  100 product challenge  ,为微信公众号(大于2000字)、即刻、小红书平台创建中文内容，为indiehacker创建讲故事形式 的post
+
 
 **整体优化与验证 Checklist (AI 自主研究、决策、设计、技术实现 - 聚焦高转化、SEO、信任、游戏化、全面 i18n):**
 
@@ -213,6 +215,8 @@ https://patreon.com/wanghaisheng
 
 *   ✅ **`landing-page-brief.md` 详尽透明:** 文档是否 **极致详细** 地记录了所有研究、决策、策略（特别是 SEO, 信任, i18n）及其依据？
 *   ✅ **文件结构完整:** 是否输出了 `index.html` 及 `css/`, `js/`, `img/`, `locale/` 文件夹？
+
+
 
 **(End of Enhanced Prompt Template)**
 
